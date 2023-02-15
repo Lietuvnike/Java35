@@ -7,7 +7,7 @@ public class Operators {
 
         //Basic arithmetic operators -, +, /, %
         int x = 100;
-        x = x % 76;
+        x = x + 76;
         System.out.println(x);
 
         //Assignment operator = , -=, +=, *=, /=

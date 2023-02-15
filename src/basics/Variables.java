@@ -5,7 +5,7 @@ public class Variables {
         // Declaring new variable of type int (integer)
         int number;
 
-        //Initialization of numer variable
+        //Initialization of number variable
         number = 10;
 
         //Accessing number variable value
