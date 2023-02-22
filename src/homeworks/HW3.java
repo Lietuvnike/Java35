@@ -25,5 +25,13 @@ public class HW3 {
             System.out.println("Invalid input");
         }
 
+        //Other methods
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Please enter a number");
+
+        int input = scanner.nextInt();
+        System.out.println(Math.abs(100 - input) <= 10);
+
     }
-}
+
+  }
