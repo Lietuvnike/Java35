@@ -1,6 +1,9 @@
 package homeworks;
 
+import com.sun.jdi.BooleanValue;
+
 import javax.management.MBeanAttributeInfo;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HW4 {
@@ -28,6 +31,15 @@ public class HW4 {
             System.out.println("True");
 
         }
+
+        { //Solution No. 2
+            int num1 = scanner.nextInt();
+            int num2 = scanner.nextInt();
+
+            System.out.println((((num1>0) && (num2>0)) || ((num1<0) && (num2<0))));
+        }
+
+
     }
 
 }
