@@ -29,6 +29,12 @@ public class GuessNumber {
             System.out.println("Guess the random number");
             guess = scanner.nextInt();
 
+            if (guess < rand) {
+                System.out.println("Try bigger");
+            } else if (guess > rand) {
+                System.out.println("Try smaller");
+            }
+
         }while (guess != rand);
 
         System.out.println("Congradulations you won!");
