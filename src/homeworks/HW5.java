@@ -1,5 +1,7 @@
 package homeworks;
 
+import basics.Switch;
+
 import javax.management.MBeanAttributeInfo;
 import java.util.Scanner;
 
@@ -25,6 +27,33 @@ public class HW5 {
         System.out.println("Please enter the amount of jam specified by Jane to buy ");
         int amount = scanner.nextInt();
 
+        switch (amount){
+            case 6:
+                System.out.println("true ");
+                break;
+            case 12:
+                System.out.println("true ");
+                break;
+            case 18:
+                System.out.println("true ");
+                break;
+            case 24:
+                System.out.println("true ");
+                break;
+            case 30:
+                System.out.println("true ");
+                break;
+            case 36:
+                System.out.println("true ");
+                break;
+            case 42:
+                System.out.println("true ");
+                break;
+            default:
+                System.out.println("False");
+                break;
+
+        }
 
 
 
