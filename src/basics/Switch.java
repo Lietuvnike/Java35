@@ -27,8 +27,10 @@ public class Switch {
                 System.out.println("Grade not accepted");
                 break;
 
+       }
 
-        }
+
+
 
     }
 }

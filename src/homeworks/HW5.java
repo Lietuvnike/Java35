@@ -3,6 +3,7 @@ package homeworks;
 import basics.Switch;
 
 import javax.management.MBeanAttributeInfo;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HW5 {
@@ -24,38 +25,15 @@ public class HW5 {
          Your application should print true or false.*/
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter the amount of jam specified by Jane to buy ");
-        int amount = scanner.nextInt();
+        System.out.println("Please enter the amount of jam in kg Jane needs");
+        int amountOfJams = scanner.nextInt();
 
-        switch (amount){
-            case 6:
-                System.out.println("true ");
-                break;
-            case 12:
-                System.out.println("true ");
-                break;
-            case 18:
-                System.out.println("true ");
-                break;
-            case 24:
-                System.out.println("true ");
-                break;
-            case 30:
-                System.out.println("true ");
-                break;
-            case 36:
-                System.out.println("true ");
-                break;
-            case 42:
-                System.out.println("true ");
-                break;
-            default:
-                System.out.println("False");
-                break;
+        int amountOf7kgJars = amountOfJams / 7;
+        System.out.println("amountOf7kgJars = " + amountOf7kgJars);
 
-        }
+        int amountOf1kgJars = amountOfJams % 7;
+        System.out.println("amountOf1kgJars = " + amountOf1kgJars);
 
-
-
+        System.out.println(amountOf1kgJars + amountOf1kgJars <= 6);
     }
 }
