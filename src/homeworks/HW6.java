@@ -12,5 +12,15 @@ public class HW6 {
             System.out.println(CHR);
             CHR++;
         } while (CHR <= (char) 90);
+
+        //Solution 1
+        for(int i = 65; i <= 90; i++){
+            System.out.println((char)i);
+        }
+
+        //Solution 2
+        for (char i = 'A'; i <= 'Z'; i++){
+            System.out.println(i);
+        }
     }
 }

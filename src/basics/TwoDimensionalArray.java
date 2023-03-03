@@ -1,12 +1,15 @@
 package basics;
 
 import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class TwoDimensionalArray {
     public static void main(String[] args) {
 
         //Declaring 2D array with 2 rows and 5 columns
         String[][] dreamCars = new String[2][5];
+        //Greitesnis budas parasyti nei vardinti kiekviena is naujos eilutes
+        String[][] dreamCars2 = new String[][]{{"Audi", "bMW"},{"Lada", "VW"}};
 
         dreamCars[0][0] = "Audi";
         dreamCars[0][1] = "BMW";
@@ -33,6 +36,19 @@ public class TwoDimensionalArray {
 
             for (int j = 0; j < dreamCars[i].length; j++){
                 System.out.println(dreamCars[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        //Same thing using nested For-each loops
+        for (String [] rows: dreamCars){
+            System.out.println(Arrays.toString(rows));
+        }
+
+        //Inner for loop
+        for (String [] rows: dreamCars){
+            for (String car: rows){
+                System.out.print(car + " ");
             }
             System.out.println();
         }
