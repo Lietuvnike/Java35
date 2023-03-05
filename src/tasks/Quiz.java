@@ -9,9 +9,9 @@ public class Quiz {
 
         Scanner scanner = new Scanner(System.in);
         String[][] quizArray = new String[4][4];
+        //laiko atsakymus teisingus:
         int[] answer = {3,1,2,2};
         int score = 0;
-
 
         quizArray[0][0] = "Capital city of Australia?";
         quizArray[0][1] = "Sydney";
@@ -38,22 +38,22 @@ public class Quiz {
 
         for (int i = 0; i < quizArray.length; i++) {
 
+            //Print out question
             System.out.println(quizArray[i][0]);
 
             for (int j = 1; j < quizArray[i].length; j++){
                 //Print our answer
                 System.out.println("\t" + j + ") " + quizArray[i][j]);
-
             }
 
             //Ask usr for input
-
             System.out.println("Answer (1-3):");
             int answerInput = scanner.nextInt();
 
             //Check answer is correct
             if(answerInput == answer[i]) {
                 System.out.println("Correct :)");
+                score++;
             }else {
                 System.out.println("False :(");
             }
