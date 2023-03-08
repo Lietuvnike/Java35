@@ -26,9 +26,8 @@ public class HW7 {
             System.out.println("Please enter element number: " + j++ + ") ");
             int answerInput = scanner.nextInt();
             myArray[i] = answerInput;
-            /*'+=' operator - this operator adds a value present at the right hand side to the variable and
-            sums it up in the background automatically*/
             sumElements += answerInput;
+
 
             }
         System.out.println("Source Array: " + Arrays.toString(myArray));
