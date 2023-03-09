@@ -70,6 +70,9 @@ public class StringExamples {
         double doubleValue = Double.parseDouble(doubleStrValue);
         boolean booleanValue = Boolean.parseBoolean(booleanStrValue);
         long longValue = Long.parseLong(longStrValue);
+        char charValue = charStrValue.charAt(0);
+
+
 
 
 
