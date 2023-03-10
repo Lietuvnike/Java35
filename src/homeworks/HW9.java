@@ -10,17 +10,17 @@ public class HW9 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input tree size ");
-        int score = scanner.nextInt();
+        int height = scanner.nextInt();
 
-        if (score <= 40.0f){
-            System.out.println("Score is <= 40%");
-        } else if (score <= 80.0f) {
-            System.out.println("Score is <= 80%");
-            if (score <= 60.0f){
-                System.out.println("<= 60%");
-            }else {
-                System.out.println("Score is <= 100%");
+
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < height - i; j++) {
+                System.out.print(" ");
             }
-
+            for (int k = 0; k <= i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
