@@ -1,9 +1,5 @@
-package homeworks;
+package basics.homeworks;
 
-import basics.Switch;
-
-import javax.management.MBeanAttributeInfo;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HW5 {

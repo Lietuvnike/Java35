@@ -1,6 +1,4 @@
-package homeworks;
-
-import basics.MathClass;
+package basics.homeworks;
 
 import java.util.Arrays;
 import java.util.Scanner;

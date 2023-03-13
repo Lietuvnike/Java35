@@ -1,6 +1,5 @@
-package homeworks;
+package basics.homeworks;
 
-import javax.management.MBeanAttributeInfo;
 import java.util.Scanner;
 
 public class HW2 {

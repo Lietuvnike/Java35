@@ -1,10 +1,8 @@
 package basics;
 
-import com.sun.security.jgss.GSSUtil;
-
 import java.util.Scanner;
 
-public class Imput {
+public class Input {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

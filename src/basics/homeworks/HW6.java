@@ -1,6 +1,4 @@
-package homeworks;
-
-import javax.management.MBeanAttributeInfo;
+package basics.homeworks;
 
 public class HW6 {
     public static void main(String[] args) {

@@ -1,8 +1,6 @@
-package homeworks;
+package basics.homeworks;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class HW10 {
     public static void main(String[] args) {
@@ -12,7 +10,6 @@ public class HW10 {
         beginning and second from end etc. with rest of the elements
          Print out array elements using Arrays.toString() method
         PS. You are not allowed to create another array. Only change original one. */
-
 
         int[] myArray = {1, 2, 3, 4, 5, 6, 20, 7, 8, 9, 10, 11, 12};
         System.out.println("Original array: " + Arrays.toString(myArray));

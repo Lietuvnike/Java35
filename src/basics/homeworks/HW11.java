@@ -1,4 +1,4 @@
-package homeworks;
+package basics.homeworks;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -22,7 +22,7 @@ public class HW11 {
 
             System.out.println("Please enter your Personal Number (Example 112233-12345): ");
             Scanner scanner = new Scanner(System.in);
-            String personalNumber = scanner.nextLine();
+            String personalNumber = scanner.nextLine().trim();
 
             if (Pattern.matches("[1-9]{6}-[0-9]{5}", personalNumber)) {
                 System.out.println("Your personal number is valid");

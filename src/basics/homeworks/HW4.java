@@ -1,9 +1,5 @@
-package homeworks;
+package basics.homeworks;
 
-import com.sun.jdi.BooleanValue;
-
-import javax.management.MBeanAttributeInfo;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HW4 {
