@@ -1,6 +1,7 @@
-package basics.homeworks;
+package homeworks;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HW11 {
@@ -17,14 +18,19 @@ public class HW11 {
          Add ability to enter and check personal code as many times as user wants using a while loop and asking to
         enter user a letter ‘y’ for yes and ‘n’ for no. */
 
+        System.out.println("Please enter name: ");
+        Scanner scanner = new Scanner(System.in);
         char again = 'y';
+        Pattern pattern = Pattern.compile("[0-9]{6}-[0-9]{5}");
+
         while (again == 'y') {
+            System.out.println("Enter your personal number");
+            String plateNumber = scanner.nextLine().trim();
 
-            System.out.println("Please enter your Personal Number (Example 112233-12345): ");
-            Scanner scanner = new Scanner(System.in);
-            String personalNumber = scanner.nextLine().trim();
+            Matcher matcher = pattern.matcher(plateNumber);
+            boolean matches = matcher.matches();
 
-            if (Pattern.matches("[1-9]{6}-[0-9]{5}", personalNumber)) {
+            if (matches) {
                 System.out.println("Your personal number is valid");
             } else {
                 System.out.println("Your personal number is not valid");
