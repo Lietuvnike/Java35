@@ -10,6 +10,7 @@ public class HW15 {
 
     public static String rockPaperScissors(String player1, String player2){
         System.out.println("Let's the game begin");
+        return player1;
 
     }
 }
