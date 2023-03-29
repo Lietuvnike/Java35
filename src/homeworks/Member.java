@@ -1,7 +1,7 @@
 package homeworks;
 
     public abstract class Member {
-
+        //fields
         protected String name;
         protected int age;
         protected String phoneNumber;
@@ -18,6 +18,8 @@ package homeworks;
         }
 
         //one abstract method:
-        public abstract void printSalary();
+        public void printSalary() {
+            System.out.println("Salary for " + name + " is " + salary + ".");
+        }
     }
 

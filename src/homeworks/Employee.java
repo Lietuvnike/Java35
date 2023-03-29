@@ -9,9 +9,6 @@ public class Employee extends Member {
         this.specialization = specialization;
     }
 
-    public void printSalary() {
-        System.out.println("Salary for " + name + " is " + salary + ".");
-    }
 }
 
 

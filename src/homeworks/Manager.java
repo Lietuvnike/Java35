@@ -8,10 +8,6 @@ public class Manager extends Member {
         super(name, age, phoneNumber, address, salary);
         this.department = department;
     }
-
-    public void printSalary() {
-        System.out.println("Salary for " + name + " is " + salary + ".");
-    }
 }
 
 
