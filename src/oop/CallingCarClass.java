@@ -28,7 +28,7 @@ public class CallingCarClass {
         if (car1.getMaxSpeed() >= 300){
             System.out.println("Sports car");
         }else {
-            System.out.println("Regulr car");
+            System.out.println("Regular car");
         }
 
 
