@@ -12,7 +12,8 @@ public class vehicleCalling {
         System.out.println("Enter how many passengers will be in vehicle");
         int passengers = scanner.nextInt();
         System.out.println("Will you turn on air conditioner? true/false : ");
-        boolean airConditioner = scanner.nextBoolean();
+        char input = scanner.next().toLowerCase().charAt(0);
+        boolean airConditioner = false;
 
         Vehicle vehicle = new Vehicle(fuel, fuelUsage, passengers);
         float maxDistance = vehicle.maxDistance();

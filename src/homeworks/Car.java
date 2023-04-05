@@ -9,20 +9,17 @@ public class Car extends Vehicle {
     }
 
     public float MaxDistance() {
-        float fuelConsumption = this.getFuelUsage() * (1 + (1 + 0.05f * getPassengers()));
-        float fuelConsumption1 = fuelConsumption;
+        float airConditionerAdd;
 
         if (airConditioner) {
-            fuelConsumption1 = fuelConsumption * 1.1f;
+            airConditionerAdd = 1.1f;
+        } else {
+            airConditionerAdd = 1f;
         }
-        return getFuel() / fuelConsumption1 * 100;
+
+        float usage = getFuelUsage() * (1 + getPassengers() * 0.05f);
+        float maxDistance = getFuel() / (usage * airConditionerAdd) * 1;
+        return maxDistance;
     }
 
-    public boolean isAirConditioner() {
-        return airConditioner;
-    }
-
-    public void setAirConditioner(boolean airConditioner) {
-        this.airConditioner = airConditioner;
-    }
 }
