@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Users {
     public static void main(String[] args) {
-
+        //test
         String dbURL = "jdbc:mysql://localhost:3306/java35";
         String username = "root";
         String password = "1111";
